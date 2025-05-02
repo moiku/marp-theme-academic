@@ -25,7 +25,7 @@ h2 {
   border-bottom: 2px solid var(--color-wsd3);
 }
 h3 {
-  font-size: 28px;
+  font-size: 32px;
   color: var(--color-wsd1);
 }
 p {
@@ -90,7 +90,7 @@ section.lead p {
   text-align: right;
 }
 section.lead {
-background-image: url(https://raw.githubusercontent.com/moiku/marp-theme-academic/refs/heads/main/images/bg-wsd.png);
+background-image: url(https://raw.githubusercontent.com/moiku/marp-theme-academic/refs/heads/main/images/bg-tml.png);
 }
 
 header {
@@ -103,9 +103,12 @@ header {
 blockquote {
   max-width: 90%;
   border-top: 0.1em dashed #555;
-  font-size: 60%;
+  font-size: 0.7em;
   position: absolute;
   bottom: 20px;
+}
+blockquote, blockquote p {
+  font-size: 0.7em;
 }
 blockquote::before {
   content: "";
@@ -120,7 +123,7 @@ img[alt~="center"] {
 }
 
 table {
-  font-size: 24pt;
+  font-size: 20pt;
   margin: auto;
 }
 code {
@@ -129,7 +132,7 @@ code {
 
 .marker {
     font-size: inherit;
-    background: linear-gradient(transparent 80%, var(--color-wsd4) 60%);
+    background: linear-gradient(transparent 80%, var(--color-wsd4) 40%);
     padding: 0 2px;
 }
 
@@ -140,4 +143,5 @@ code {
     border-radius: 15px;
     padding: 1rem;
     margin: 1rem 0;
+    text-align: center;
 }
