@@ -130,6 +130,14 @@ code {
   font-family: 'Source Code Pro', monospace;
 }
 
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+.column {
+  flex: 1;
+}
+
 .marker {
     font-size: inherit;
     background: linear-gradient(transparent 80%, var(--color-nut4) 40%);
