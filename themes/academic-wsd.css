@@ -28,6 +28,10 @@ h3 {
   font-size: 32px;
   color: var(--color-wsd1);
 }
+h4 {
+  font-size: 28px;
+  color: var(--color-wsd1);
+}
 p {
   font-size: 28px;
   line-height: 1.5;
@@ -90,7 +94,7 @@ section.lead p {
   text-align: right;
 }
 section.lead {
-background-image: url(https://raw.githubusercontent.com/moiku/marp-theme-academic/refs/heads/main/images/bg-wsd.png);
+background-image: url(https://raw.githubusercontent.com/moiku/marp-theme-academic/refs/heads/main/images/bg-tml.png);
 }
 
 header {
@@ -128,6 +132,14 @@ table {
 }
 code {
   font-family: 'Source Code Pro', monospace;
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+.column {
+  flex: 1;
 }
 
 .marker {
