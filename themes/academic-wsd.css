@@ -144,7 +144,7 @@ code {
 
 /* 左側のカラムに右ボーダーを追加 */
 .column:first-child {
-  border-right: 1px solid #ccc; 
+  border-right: 1px solid var(--color-wsd3); 
   padding-right: 5px; 
 }
 
