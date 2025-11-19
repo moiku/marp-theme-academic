@@ -136,10 +136,21 @@ code {
 
 .two-columns {
   display: flex;
-  gap: 20px;
+  gap: 10px; 
 }
 .column {
   flex: 1;
+}
+
+/* 左側のカラムに右ボーダーを追加 */
+.column:first-child {
+  border-right: 1px solid var(--color-nut3); 
+  padding-right: 5px; 
+}
+
+/* 右側のカラムに左パディングを追加 */
+.column:last-child {
+  padding-left: 5px;
 }
 
 .marker {
