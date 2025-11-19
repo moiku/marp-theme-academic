@@ -168,3 +168,11 @@ code {
     margin: 1rem 0;
     text-align: center;
 }
+
+.bubble > :first-child {
+    margin-top: 0;
+}
+
+.bubble > :last-child {
+    margin-bottom: 0;
+}
