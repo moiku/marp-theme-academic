@@ -176,3 +176,9 @@ code {
 .bubble > :last-child {
     margin-bottom: 0;
 }
+
+section.scale-math .katex,
+section.scale-math mjx-container {
+  transform: scale(0.9);
+  transform-origin: center;
+}
