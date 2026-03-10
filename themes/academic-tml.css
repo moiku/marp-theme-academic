@@ -19,6 +19,22 @@ h1 {
   color: var(--color-nut1);
   font-weight: bold;
 }
+
+/* h1 をスライドヘッダーバーとして使用（<!-- _header: ... --> の代替） */
+section:not(.lead) h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px 40px;
+  background-color: var(--color-nut2);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  box-sizing: border-box;
+  line-height: 1;
+}
 h2 {
   font-size: 36px;
   color: var(--color-nut2);
