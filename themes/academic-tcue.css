@@ -19,6 +19,22 @@ h1 {
   color: var(--color-tcue1);
   font-weight: bold;
 }
+
+/* h1 をスライドヘッダーバーとして使用（<!-- _header: ... --> の代替） */
+section:not(.lead) h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px 40px;
+  background-color: var(--color-tcue2);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  box-sizing: border-box;
+  line-height: 1;
+}
 h2 {
   font-size: 36px;
   color: var(--color-tcue2);
@@ -26,6 +42,10 @@ h2 {
 }
 h3 {
   font-size: 32px;
+  color: var(--color-tcue1);
+}
+h4 {
+  font-size: 28px;
   color: var(--color-tcue1);
 }
 p {
@@ -98,7 +118,7 @@ header {
   color: #fff;
   font-size: 48px;
   font-weight: 700;
-} 
+}
 
 blockquote {
   max-width: 90%;
@@ -130,10 +150,48 @@ code {
   font-family: 'Source Code Pro', monospace;
 }
 
+.two-columns {
+  display: flex;
+  gap: 10px;
+}
+.column {
+  flex: 1;
+}
+
+/* 左側のカラムに右ボーダーを追加 */
+.column:first-child {
+  border-right: 1px solid var(--color-tcue3);
+  padding-right: 5px;
+}
+
+/* 右側のカラムに左パディングを追加 */
+.column:last-child {
+  padding-left: 5px;
+}
+
 .marker {
     font-size: inherit;
-    background: linear-gradient(transparent 80%, var(--color-tcue4) 40%);
+    background: linear-gradient(transparent 60%, var(--color-tcue4) 60%);
+    background-size: 100% 1em;
+    background-repeat: no-repeat;
+    background-position: left bottom;
     padding: 0 2px;
+}
+
+/* パラパラアニメーション用グレーアウト */
+.dim {
+    color: #b0b0b0;
+}
+
+.dim img {
+    opacity: 0.4;
+}
+
+.dim .marker {
+    background: linear-gradient(transparent 60%, #d0d0d0 60%);
+    background-size: 100% 1em;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 .bubble {
@@ -144,4 +202,18 @@ code {
     padding: 1rem;
     margin: 1rem 0;
     text-align: center;
+}
+
+.bubble > :first-child {
+    margin-top: 0;
+}
+
+.bubble > :last-child {
+    margin-bottom: 0;
+}
+
+section.scale-math .katex,
+section.scale-math mjx-container {
+  transform: scale(0.9);
+  transform-origin: center;
 }

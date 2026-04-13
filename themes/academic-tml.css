@@ -171,8 +171,27 @@ code {
 
 .marker {
     font-size: inherit;
-    background: linear-gradient(transparent 80%, var(--color-nut4) 40%);
+    background: linear-gradient(transparent 60%, var(--color-nut4) 60%);
+    background-size: 100% 1em;
+    background-repeat: no-repeat;
+    background-position: left bottom;
     padding: 0 2px;
+}
+
+/* パラパラアニメーション用グレーアウト */
+.dim {
+    color: #b0b0b0;
+}
+
+.dim img {
+    opacity: 0.4;
+}
+
+.dim .marker {
+    background: linear-gradient(transparent 60%, #d0d0d0 60%);
+    background-size: 100% 1em;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 .bubble {
