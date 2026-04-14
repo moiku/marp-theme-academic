@@ -13,7 +13,7 @@
 | テーマ名 | 用途 |
 |---|---|
 | `academic-tml` | 汎用（長岡技術科学大学カラー） |
-| `academic-tcue` | 千葉科学技術大学カラー |
+| `academic-tcue` | 高崎経済大学カラー |
 | `academic-wsd` | 早稲田大学カラー |
 
 ---
